@@ -27,6 +27,8 @@ class Humain:
     def ecouter(self, message_ecouter):
         print(message_ecouter)
         
+    def rire(self, message_rire):
+        print(message_rire)
 
 #Programme pricipal
 
@@ -43,4 +45,7 @@ print("Planete apres changement : {}".format(Humain.lieu_habitation))
 h1.changer_planete("Pluto")
 h1.parler("Salutot")
 
+
 Humain.definiton()
+
+h1.rire("hahahaha!!!")
