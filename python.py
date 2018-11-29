@@ -44,3 +44,4 @@ h1.changer_planete("Pluto")
 h1.parler("Salutot")
 
 Humain.definiton()
+h1.ecouter("salut les coucou")
