@@ -1,1 +1,2 @@
-Bonjour Wafi
+Salut je suis une nouvelle phrase dans le fichier texte.
+Coucou, je suis ajouter apres le dernier texte.
