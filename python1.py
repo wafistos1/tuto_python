@@ -47,6 +47,8 @@ mon_fichier = open("fichier.txt", "r")
 contenu = mon_fichier.read()
 print(contenu)
 mon_fichier.close()
+input()
+
 """ MODE WITH"""
 with open('fichier.txt', 'r') as mon_fichier:
     texte = mon_fichier.read()
