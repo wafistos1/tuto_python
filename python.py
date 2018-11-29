@@ -23,6 +23,9 @@ class Humain:
         print("Bonjour vous etes dans la fonction statique")
     
     definiton = staticmethod(definiton)
+
+    def ecouter(self, message_ecouter):
+        print(message_ecouter)
         
 
 #Programme pricipal
