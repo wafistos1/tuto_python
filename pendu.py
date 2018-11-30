@@ -4,11 +4,23 @@ from donnes import *
 from fonctions import *
 
 
+motMystere = "wafistos"
+motComparer = ""
 
-liste = {"wafi":"homme", "meriem":"femme", "jimmy":"garcon"}
+nb_coups = 5
+i=0
+while i < 5:#Boucle pricipale 
+    lettre_rentrer = (input("Veuillez entrer une lettre: "))
 
-for element  in liste:
-    if element == "wafi":
-        print("le joueur que vous chercher est existant")
-    else:
-        print("nothing..")
+    for lettre in motMystere:
+        if lettre in lettre_rentrer:
+            print(lettre_rentrer, end='')
+            motComparer.(lettre_rentrer)
+
+        else:
+            print("*", end='')
+    i+=1
+    nb_coups -= 1 
+    print()      
+    print("il vous reste {} coups".format(nb_coups))
+#Programme principal
