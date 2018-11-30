@@ -42,8 +42,9 @@ while (i <= nb_restant) and motComparer != motMystere:#Boucle pricipale
 if motComparer == motMystere:
         score = nb_coups + 3
         dico[nom_joueur] = score 
-        print("\nBravo  vous avez gagnez!!!en {} coups.\n votre score est {} points".format(i, dico[nom_joueur])) 
+        joueur = list(dico.keys())[list(dico.values()).index(score)]
+        print("\nBravo {} vous avez gagnez!!!en {} coups.\nVotre score : {} points".format(joueur.upper() ,i, dico[nom_joueur])) 
 else:
-        print("\nDesole vous avez perdu!! :( \nle mot mystere etais '{}'".format(motMystere.upper()))
+        print("\nDesole vous avez perdu!! :( \nLe mot mystere etais '{}'".format(motMystere.upper()))
     
 
