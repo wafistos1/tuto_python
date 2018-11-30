@@ -5,22 +5,28 @@ from fonctions import *
 
 
 motMystere = "wafistos"
-motComparer = ""
 
-nb_coups = 5
+motComparer = "********"
+
+print("**************************************************************")
+print("************BIENVENUU AU JEU LE PENDU*************************")
+print("**************************************************************")
+nb_restant = 8
+nb_coups = 8
 i=0
-while i < 5:#Boucle pricipale 
+while (i <= nb_restant) and motComparer != motMystere:#Boucle pricipale 
     lettre_rentrer = (input("Veuillez entrer une lettre: "))
-
-    for lettre in motMystere:
-        if lettre in lettre_rentrer:
-            print(lettre_rentrer, end='')
-            motComparer.(lettre_rentrer)
-
-        else:
-            print("*", end='')
-    i+=1
-    nb_coups -= 1 
     print()      
     print("il vous reste {} coups".format(nb_coups))
+    
+        
+    motComparer = "".join([motMystere[ind] if motMystere[ind] == lettre_rentrer else motComparer[ind] for ind in range (len(motMystere))] )
+    print(motComparer, end='')
+    nb_coups-=1
+    if motComparer == motMystere:
+        print("  wBravo vous avez gagnez!!!en {} coups.".format(i+1))
+    i+=1
+        
+    
+    
 #Programme principal
