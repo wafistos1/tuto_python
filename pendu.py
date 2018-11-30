@@ -15,18 +15,21 @@ nb_restant = 8
 nb_coups = 8
 i=0
 while (i <= nb_restant) and motComparer != motMystere:#Boucle pricipale 
-    lettre_rentrer = (input("Veuillez entrer une lettre: "))
+    lettre_rentrer = (input("\nVeuillez entrer une lettre: "))
+     
     print()      
     print("il vous reste {} coups".format(nb_coups))
     
         
-    motComparer = "".join([motMystere[ind] if motMystere[ind] == lettre_rentrer else motComparer[ind] for ind in range (len(motMystere))] )
+    motComparer = "".join([motMystere[i] if motMystere[i] == lettre_rentrer else motComparer[i] for i in range(len(motComparer))] )
     print(motComparer, end='')
     nb_coups-=1
-    if motComparer == motMystere:
-        print("  wBravo vous avez gagnez!!!en {} coups.".format(i+1))
+    
     i+=1
         
-    
+if motComparer == motMystere:
+        print("\nBravo vous avez gagnez!!!en {} coups.".format(i+1)) 
+else:
+        print("\nDesole vous avez perdu!! :( \nle mot mystere etais '{}'".format(motMystere.upper()))
     
 #Programme principal
