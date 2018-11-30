@@ -1,13 +1,5 @@
-Salut je suis une nouvelle phrase dans le fichier texte.
-Coucou, je suis ajouter apres le dernier texte.
-
-*****************************************************************
-********* LISTE DU NOM DES JOUEURS ******************************
-*****************************************************************
-
 wafistos : 0
 jimmy    : 19
 meriem   : 30
-
 
 
